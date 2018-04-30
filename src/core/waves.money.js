@@ -54,7 +54,6 @@ var Currency = (function () {
         verified: true
     });
 
-
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }

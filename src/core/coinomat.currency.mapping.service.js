@@ -33,8 +33,6 @@
 
                     case Currency.KDEX.id:
                         return 'KDEX';
-
-
                 }
 
                 unsupportedCurrency(currency);
