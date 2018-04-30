@@ -30,7 +30,7 @@
                     case Currency.ZEC.id:
                         return 'WZEC';
 
-                    case Currency.BCC.id:
+                    case Currency.BCH.id:
                         return 'WBCH';
                 }
 
@@ -59,7 +59,7 @@
                     case Currency.ZEC.id:
                         return 'ZEC';
 
-                    case Currency.BCC.id:
+                    case Currency.BCH.id:
                         return 'BCH';
                 }
 

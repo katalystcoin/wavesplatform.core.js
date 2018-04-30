@@ -710,10 +710,10 @@ var Currency = (function () {
         verified: true
     });
 
-    var BCC = new Currency({
+    var BCH = new Currency({
         id: 'zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy',
         displayName: 'Bitcoin Cash',
-        shortName: 'BCC',
+        shortName: 'BCH',
         precision: 8,
         verified: true
     });
@@ -2238,10 +2238,10 @@ var Currency = (function () {
         verified: true
     });
 
-    var WTRY = new Currency({
+    var TRY = new Currency({
         id: '2mX5DzVKWrAJw8iwdJnV2qtoeVG9h5nTDpTqC1wb1WEN',
-        displayName: 'WTRY',
-        shortName: 'WTRY',
+        displayName: 'TRY',
+        shortName: 'TRY',
         precision: 2,
         verified: true
     });
@@ -2326,6 +2326,14 @@ var Currency = (function () {
         verified: true
     });
 
+    var DASH = new Currency({
+        id: 'B3uGHFRpSUuGEDWjqB9LWWxafQj8VTvpMucEyoxzws5H',
+        displayName: 'Dash token',
+        shortName: 'DASH',
+        precision: 8,
+        verified: true
+    });
+
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -2335,7 +2343,7 @@ var Currency = (function () {
 
         currencyCache[WAVES.id] = WAVES;
         currencyCache[BTC.id] = BTC;
-        currencyCache[BCC.id] = BCC;
+        currencyCache[BCH.id] = BCH;
         currencyCache[ETH.id] = ETH;
         currencyCache[LTC.id] = LTC;
         currencyCache[ZEC.id] = ZEC;
@@ -2526,7 +2534,7 @@ var Currency = (function () {
         currencyCache[ANRYZE.id] = ANRYZE;
         currencyCache[KLX.id] = KLX;
         currencyCache[POST.id] = POST;
-        currencyCache[WTRY.id] = WTRY;
+        currencyCache[TRY.id] = TRY;
         currencyCache[JDC.id] = JDC;
         currencyCache[Blue.id] = Blue;
         currencyCache[AKCHE.id] = AKCHE;
@@ -2558,7 +2566,7 @@ var Currency = (function () {
         isCached: isCached,
         WAVES: WAVES,
         BTC: BTC,
-        BCC: BCC,
+        BCH: BCH,
         ETH: ETH,
         LTC: LTC,
         ZEC: ZEC,
@@ -2749,7 +2757,7 @@ var Currency = (function () {
         ANRYZE: ANRYZE,
         KLX: KLX,
         POST: POST,
-        WTRY: WTRY,
+        TRY: TRY,
         JDC: JDC,
         Blue: Blue,
         AKCHE: AKCHE,
@@ -2759,7 +2767,8 @@ var Currency = (function () {
         TN: TN,
         ENAN: ENAN,
         ContestCoin: ContestCoin,
-        SMQ: SMQ
+        SMQ: SMQ,
+        DASH: DASH
     };
 })();
 
@@ -4447,7 +4456,7 @@ Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
                     case Currency.ZEC.id:
                         return 'WZEC';
 
-                    case Currency.BCC.id:
+                    case Currency.BCH.id:
                         return 'WBCH';
                 }
 
@@ -4476,7 +4485,7 @@ Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
                     case Currency.ZEC.id:
                         return 'ZEC';
 
-                    case Currency.BCC.id:
+                    case Currency.BCH.id:
                         return 'BCH';
                 }
 
