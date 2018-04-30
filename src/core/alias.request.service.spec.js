@@ -21,7 +21,7 @@ describe('Alias.Request.Service', function() {
     }));
 
     it('should successfully sign create alias request', function () {
-        var fee = Money.fromTokens(0.01, Currency.WAVES);
+        var fee = Money.fromTokens(0.01, Currency.KDEX);
         var nick = 'Sasha Ivanov';
         var alias = {
             alias: nick,

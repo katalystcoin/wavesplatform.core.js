@@ -9,7 +9,7 @@ describe('order.price', function() {
     });
 
     beforeEach(function () {
-        expect(Currency.WAVES).toBeDefined();
+        expect(Currency.KDEX).toBeDefined();
         expect(Currency.BTC).toBeDefined();
         expect(Currency.USD).toBeDefined();
         expect(Currency.EUR).toBeDefined();
@@ -18,7 +18,7 @@ describe('order.price', function() {
 
     it('calculates correct price when assets precisions are equal to 8', function () {
         var pair = {
-            amountAsset: Currency.WAVES,
+            amountAsset: Currency.KDEX,
             priceAsset: Currency.BTC
         };
 
@@ -66,7 +66,7 @@ describe('order.price', function() {
 
     it('calculates correct price when amount asset precision is 8 and price asset precision is 2', function () {
         var pair = {
-            amountAsset: Currency.WAVES,
+            amountAsset: Currency.KDEX,
             priceAsset: Currency.EUR
         };
 
@@ -106,7 +106,7 @@ describe('order.price', function() {
     it('calculates correct price when amount asset precision is 2 and price asset precision is 8', function () {
         var pair = {
             amountAsset: Currency.WCT,
-            priceAsset: Currency.WAVES
+            priceAsset: Currency.KDEX
         };
 
         var p = OrderPrice.fromTokens(1.47, pair);
@@ -150,7 +150,7 @@ describe('order.price', function() {
     it('converts backend price to valid OrderPrice when assets precisions are equal to 8', function () {
         var backendPrice = 1.47 * 1e8;
         var pair = {
-            amountAsset: Currency.WAVES,
+            amountAsset: Currency.KDEX,
             priceAsset: Currency.BTC
         };
 

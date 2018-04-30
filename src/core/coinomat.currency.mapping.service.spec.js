@@ -19,8 +19,8 @@ describe('Coinomat.Currency.Mapping.Service', function() {
         expect(mappingService.gatewayCurrencyCode(Currency.BTC)).toEqual('BTC');
     });
 
-    it('should return correct codes for waves', function() {
-        expect(mappingService.gatewayCurrencyCode(Currency.WAVES)).toEqual('WAVES');
-        expect(mappingService.platformCurrencyCode(Currency.WAVES)).toEqual('WAVES');
+    it('should return correct codes for KDEX', function() {
+        expect(mappingService.gatewayCurrencyCode(Currency.KDEX)).toEqual('KDEX');
+        expect(mappingService.platformCurrencyCode(Currency.KDEX)).toEqual('KDEX');
     });
 });

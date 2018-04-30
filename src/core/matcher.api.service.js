@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var WAVES_ASSET_ID = 'WAVES',
+    var WAVES_ASSET_ID = 'KDEX',
         WAVES_PRECISION = 8;
 
     function denormalizeId(id) {
