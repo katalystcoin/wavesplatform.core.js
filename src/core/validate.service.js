@@ -33,8 +33,8 @@
                     throw new Error('Token decimal places amount hasn\'t been set');
                 }
 
-                if (issue.fee.currency !== Currency.WAVES) {
-                    throw new Error('Transaction fee must be nominated in Waves');
+                if (issue.fee.currency !== Currency.KDEX) {
+                    throw new Error('Transaction fee must be nominated in KDEX');
                 }
             };
 
@@ -53,8 +53,8 @@
             };
 
             self.validateAssetReissue = function (reissue) {
-                if (reissue.totalTokens.currency === Currency.WAVES) {
-                    throw new Error('Reissuing Waves is not allowed.');
+                if (reissue.totalTokens.currency === Currency.KDEX) {
+                    throw new Error('Reissuing KDEX is not allowed.');
                 }
 
                 if (angular.isUndefined(reissue.totalTokens)) {
@@ -65,8 +65,8 @@
                     throw new Error('Transaction fee hasn\'t been set');
                 }
 
-                if (reissue.fee.currency !== Currency.WAVES) {
-                    throw new Error('Transaction fee must be nominated in Waves');
+                if (reissue.fee.currency !== Currency.KDEX) {
+                    throw new Error('Transaction fee must be nominated in KDEX');
                 }
             };
         });

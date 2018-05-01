@@ -33,7 +33,7 @@ describe('Asset.Service', function() {
             totalTokens: 100000000,
             decimalPlaces: 2,
             reissuable: true,
-            fee: new Money(1, Currency.WAVES)
+            fee: new Money(1, Currency.KDEX)
         };
 
         var actual = assetService.createAssetIssueTransaction(transaction, sender);
@@ -57,7 +57,7 @@ describe('Asset.Service', function() {
             time: 1478704158292,
             totalTokens: 100000000,
             decimalPlaces: 2,
-            fee: new Money(1, Currency.WAVES)
+            fee: new Money(1, Currency.KDEX)
         };
 
         var actual = assetService.createAssetIssueTransaction(transaction, sender);
@@ -79,7 +79,7 @@ describe('Asset.Service', function() {
             recipient: '3N9UuGeWuDt9NfWbC5oEACHyRoeEMApXAeq',
             time: 1478864678621,
             amount: new Money(10, asset),
-            fee: new Money(0.001, Currency.WAVES)
+            fee: new Money(0.001, Currency.KDEX)
         };
 
         var actual = assetService.createAssetTransferTransaction(transfer, sender);
@@ -100,7 +100,7 @@ describe('Asset.Service', function() {
             recipient: 'test alias',
             time: 1478864678621,
             amount: new Money(10, asset),
-            fee: new Money(0.001, Currency.WAVES)
+            fee: new Money(0.001, Currency.KDEX)
         };
 
         var actual = assetService.createAssetTransferTransaction(transfer, sender);
@@ -122,7 +122,7 @@ describe('Asset.Service', function() {
             totalTokens: amount,
             reissuable: false,
             time: 1478868177862,
-            fee: new Money(1, Currency.WAVES)
+            fee: new Money(1, Currency.KDEX)
         };
 
         var actual = assetService.createAssetReissueTransaction(reissue, sender);
@@ -141,7 +141,7 @@ describe('Asset.Service', function() {
         var reissue = {
             totalTokens: amount,
             time: 1478868177862,
-            fee: new Money(1, Currency.WAVES)
+            fee: new Money(1, Currency.KDEX)
         };
 
         var actual = assetService.createAssetReissueTransaction(reissue, sender);
@@ -162,7 +162,7 @@ describe('Asset.Service', function() {
             time: 1480427109954,
             totalTokens: 1000000,
             decimalPlaces: 2,
-            fee: new Money(1, Currency.WAVES)
+            fee: new Money(1, Currency.KDEX)
         };
 
         var actual = assetService.createAssetIssueTransaction(transaction, sender);

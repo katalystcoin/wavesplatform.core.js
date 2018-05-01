@@ -7,7 +7,7 @@
             if (angular.isUndefined(constants.NETWORK_NAME))
                 throw new Error('Network name hasn\'t been configured');
 
-            var $key = 'Waves' + constants.NETWORK_NAME;
+            var $key = 'KDEX' + constants.NETWORK_NAME;
 
             this.saveState = function(state) {
                 var serialized = angular.toJson(state);
