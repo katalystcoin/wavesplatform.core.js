@@ -701,7 +701,20 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-
+    var CKR = new Currency({
+        id: '2ts7KnBTDzVsaPQWBghVkxm4S5HfUpATyWnLcPjqnv1q',
+        displayName: 'ChickenRice',
+        shortName: 'CKR',
+        precision: 2,
+        verified: true
+    });
+    var SGD = new Currency({
+        id: 'GQSHUbxtg1JZKeyyZgUmHoyAtHXjWG26UE5qWkZZFYJg',
+        displayName: 'kSGD',
+        shortName: 'SGD',
+        precision: 2,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -710,6 +723,8 @@ var Currency = (function () {
         currencyCache = {};
 
         currencyCache[KDEX.id] = KDEX;
+        currencyCache[CKR.id] = CKR;
+        currencyCache[SGD.id] = SGD;
 
     }
 
@@ -730,7 +745,9 @@ var Currency = (function () {
         },
         invalidateCache: invalidateCache,
         isCached: isCached,
-        KDEX: KDEX
+        KDEX: KDEX,
+        CKR:CKR,
+        SGD:SGD
     };
 })();
 
