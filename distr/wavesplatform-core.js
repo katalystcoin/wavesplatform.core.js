@@ -702,14 +702,14 @@ var Currency = (function () {
         verified: true
     });
     var CKR = new Currency({
-        id: '2ts7KnBTDzVsaPQWBghVkxm4S5HfUpATyWnLcPjqnv1q',
+        id: 'JCsDSSCBpi6ot2bXmurRRsD9kADLw3rF9qxU4zp1scVy',
         displayName: 'ChickenRice',
         shortName: 'CKR',
         precision: 2,
         verified: true
     });
     var SGD = new Currency({
-        id: 'GQSHUbxtg1JZKeyyZgUmHoyAtHXjWG26UE5qWkZZFYJg',
+        id: '6wSooBUa4CUdha5EjzoUGsnj78PqhTDzL44qe37pi4ff',
         displayName: 'kSGD',
         shortName: 'SGD',
         precision: 2,
