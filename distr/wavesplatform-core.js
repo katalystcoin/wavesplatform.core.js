@@ -2577,7 +2577,7 @@ Decimal.config({toExpNeg: -(Currency.KDEX.precision + 1)});
 (function () {
     'use strict';
 
-    var WAVES_ASSET_ID = 'KDEX',
+    var WAVES_ASSET_ID = 'WAVES',
         WAVES_PRECISION = 8;
 
     function denormalizeId(id) {
